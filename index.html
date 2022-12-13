@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
       <header>
-        <div>
-          <h1>Best Place To Learn Frontend</h1>
-          <p>
-            Go from being an absolute beginner to being a pro in a simplified
-            process
-          </p>
-          <button>Start</button>
-          <figure>
-            <img src="./assets/laptop.png" alt="laptop image" />
-          </figure>
+        <div class="row">
+          <div>
+            <h1>Best Place To Learn Frontend</h1>
+            <p class="subheader">
+              Go from being an absolute beginner to being a pro in a simplified
+              process
+            </p>
+            <button>Start</button>
+            <figure>
+              <img src="./assets/laptop.png" alt="laptop image" />
+            </figure>
+          </div>
         </div>
       </header>
     </section>
@@ -34,23 +39,25 @@
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse illum,
-            deserunt minus rerum error eos pariatur, laboriosam sapiente
-            molestiae est itaque, similique dolores architecto labore dolorem
-            quis expedita quas officia!
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perferendis aperiam repellendus, placeat nihil sequi, veritatis quia
-            repudiandae voluptas, id quidem porro. Facilis animi debitis ab?
-            Inventore commodi iure beatae vel.
-          </p>
+        <div class="section__description">
+          <div class="section__description--wrapper">
+            <p class="section__description--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              illum, deserunt minus rerum error eos pariatur, laboriosam
+              sapiente molestiae est itaque, similique dolores architecto labore
+              dolorem quis expedita quas officia!
+            </p>
+            <p class="section__description--para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perferendis aperiam repellendus, placeat nihil sequi, veritatis
+              quia repudiandae voluptas, id quidem porro. Facilis animi debitis
+              ab? Inventore commodi iure beatae vel.
+            </p>
+          </div>
+          <figure class="about__img--wrapper">
+            <img src="./assets/about.jpg" alt="" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="" />
-        </figure>
       </section>
       <section id="discord">
         <h2>Discord</h2>
@@ -58,41 +65,40 @@
           <img src="./assets/discord.png" alt="" />
         </figure>
         <div>
-            <p>
+          <p class="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            temporibus commodi. Minus illo voluptate architecto quisquam doloribus
-            non deleniti voluptatibus distinctio, ipsam neque vero quis officia?
-            Tenetur earum eos quis!
-            </p>
-            <p>
+            temporibus commodi. Minus illo voluptate architecto quisquam
+            doloribus non deleniti voluptatibus distinctio, ipsam neque vero
+            quis officia? Tenetur earum eos quis!
+          </p>
+          <p class="section__description--para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
             beatae autem voluptates, ullam molestias porro quasi aliquam at
             expedita ad ipsa dignissimos fuga officiis mollitia quis veniam.
             Obcaecati, fugiat assumenda.
-            </p>
+          </p>
         </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
-            <span>Email</span>
-            <input type="text" placeholder="bill@example.com">
-            <span>Message</span>
-            <textarea type=""></textarea>
+          <span>Email</span>
+          <input type="text" placeholder="bill@example.com" />
+          <span>Message</span>
+          <textarea type=""></textarea>
         </form>
         <button>Submit</button>
       </section>
     </main>
 
-
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <p>Copyright FrontEnd Simplified</p>
+      <img src="./assets/FES.svg" alt="" />
+      <div>
+        <a href="#about">About</a>
+        <a href="#discord">Discord</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>Copyright FrontEnd Simplified</p>
     </footer>
   </body>
 </html>
